@@ -44,7 +44,7 @@
 
 ## 4. 기술 구성
 
-- Next.js 15 (App Router, Server Actions) · React 19 · TypeScript · Tailwind CSS
+- Next.js 16 (App Router, Server Actions) · React 19 · TypeScript · Tailwind CSS
 - Drizzle ORM · PostgreSQL — `DATABASE_URL`이 있으면 Supabase·Neon 등 PostgreSQL, 없으면 내장 PGlite(로컬 파일 DB)로 같은 코드가 동작
 - Zod(입력 검증) · jose(세션 서명) · bcryptjs
 - Vitest 자동 테스트 19개 · GitHub Actions CI

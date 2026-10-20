@@ -22,7 +22,7 @@ export default async function SurveyResult({ params }: { params: Promise<{ id: s
     if (e instanceof AppError) notFound(); // 남의 조사인지 여부도 드러내지 않는다
     throw e;
   }
-  const names = (t: typeof r.categories, list: Parameters<typeof labelOf>[0]) => leaders(t).map((x) => labelOf(list, x.id)).join("·") || "-";
+  const names = (t: typeof r.categories, list: Parameters<typeof labelOf>[0]) => leaders(t).map((x) => labelOf(list, x.id)).join(", ") || "-";
   const top = r.categories[0];
   return (
     <div className="space-y-6">
